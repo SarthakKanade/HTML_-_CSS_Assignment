@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Sign Up</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #d5cbf9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 900px;
+      background: #fff;
+      border-radius: 20px;
+      display: flex;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .left {
+      flex: 1;
+      background: #7f83ff;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 40px;
+      position: relative;
+    }
+
+    .left img {
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+    }
+
+    .left-text {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      color: white;
+      font-size: 22px;
+      font-weight: 400;
+    }
+
+    .left-text strong {
+      font-weight: 800;
+      color: #00007b;
+    }
+
+    .right {
+      flex: 1;
+      background: #fff;
+      padding: 40px;
+    }
+
+    .right h2 {
+      color: #7e75f6;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .form-group input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+
+    .checkbox input {
+      margin-right: 10px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background: linear-gradient(90deg, #7e75f6, #a289f7);
+      color: white;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .or {
+      text-align: center;
+      margin: 15px 0;
+      font-size: 14px;
+      color: #999;
+    }
+
+    .social-buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .social-buttons button {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #fff;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .signin {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .signin a {
+      color: #7e75f6;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="left-text">
+        Listen to your top musics <br /> <strong>FOR FREE</strong>
+      </div>
+      <img src="music1.png" alt="Music Image" height="300px" width="300px"/>
+    </div>
+    <div class="right">
+      <h2>Sign Up</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+        </div>
+        <input type="email" placeholder="Email" class="input-field" />
+        <input type="password" placeholder="Password" class="input-field" />
+        <input type="password" placeholder="Re-enter password" class="input-field" />
+        <div class="checkbox">
+          <input type="checkbox" /> I've read and agree with Terms of Service and our Privacy Policy
+        </div>
+        <button class="btn">Sign up</button>
+        <div class="or">OR</div>
+        <div class="social-buttons">
+          <button>Sign up with Google</button>
+          <button>Sign up with Facebook</button>
+        </div>
+        <div class="signin">
+          Already have an account? <a href="#">Sign in</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
